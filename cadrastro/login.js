@@ -31,7 +31,7 @@ items.forEach(item => {
 
 function voltarInicio(){
 
-  window.location.href = "../index.htm";
+  window.location.href = "../index.html";
 
 }
 
@@ -51,7 +51,7 @@ function voltarlogin(){
 
 function entrar1(){
 
-  window.location.href = "../dashboard.htm";
+  window.location.href = "../dashboard.html";
 }
 
 function entrar(){

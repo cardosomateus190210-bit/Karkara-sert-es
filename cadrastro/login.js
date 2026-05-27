@@ -51,10 +51,10 @@ function voltarlogin(){
 
 function entrar1(){
 
-  window.location.href = "../karkara.htm";
+  window.location.href = "../index.htm";
 }
 
 function entrar(){
 
-  window.location.href = "../karkara.htm";
+  window.location.href = "../index.htm";
 }

@@ -1,0 +1,891 @@
+/* =========================================================
+   IMPORTAÇÃO DA FONTE
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/*
+Importa a fonte Inter do Google Fonts
+*/
+
+
+
+/* =========================================================
+   RESET GERAL
+   ========================================================= */
+
+* {
+
+    margin: 0;
+    /* Remove margens */
+
+    padding: 0;
+    /* Remove espaçamentos internos */
+
+    box-sizing: border-box;
+    /* Melhora cálculo de tamanhos */
+
+    font-family: 'Inter', sans-serif;
+    /* Fonte padrão */
+}
+
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+
+    background-color: #ffffff;
+    /* Fundo branco */
+
+    color: #333333;
+    /* Cor padrão do texto */
+
+    line-height: 1.6;
+    /* Espaço entre linhas */
+}
+
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+
+    text-decoration: none;
+    /* Remove sublinhado */
+
+    transition: all 0.3s ease;
+    /* Animação suave */
+}
+
+
+
+/* =========================================================
+   LISTAS
+   ========================================================= */
+
+ul {
+
+    list-style: none;
+    /* Remove bolinhas */
+}
+
+
+
+/* =========================================================
+   VARIÁVEIS
+   ========================================================= */
+
+:root {
+
+    --verde-escuro: #134d27;
+
+    --verde-principal: #1b6b37;
+
+    --verde-claro: #eaf4ed;
+
+    --cinza-fundo: #f8f9fa;
+
+    --texto-escuro: #2d3748;
+
+    --texto-mutado: #718096;
+}
+
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+header {
+
+    display: flex;
+    /* Itens lado a lado */
+
+    justify-content: space-between;
+    /* Espaço entre itens */
+
+    align-items: center;
+    /* Centraliza verticalmente */
+
+    padding: 20px 8%;
+
+    background-color: #ffffff;
+
+    position: sticky;
+    /* Header fixo */
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+header .logo a {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: var(--verde-escuro);
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =========================================================
+   MENU
+   ========================================================= */
+
+header nav ul {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+
+header nav ul li a {
+
+    color: var(--texto-escuro);
+
+    font-weight: 500;
+}
+
+
+
+header nav ul li a:hover {
+
+    color: var(--verde-principal);
+}
+
+
+
+/* =========================================================
+   BOTÃO LOGIN
+   ========================================================= */
+
+header .btn-login {
+
+    background-color: var(--verde-escuro);
+
+    color: #ffffff;
+
+    padding: 10px 25px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    text-transform: lowercase;
+}
+
+
+
+header .btn-login:hover {
+
+    background-color: var(--verde-principal);
+}
+
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    /* Quebra linha se precisar */
+
+    gap: 50px;
+
+    padding: 60px 8%;
+
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        var(--verde-claro) 100%
+    );
+}
+
+
+
+/* =========================================================
+   TEXTO HERO
+   ========================================================= */
+
+.hero-content {
+
+    max-width: 550px;
+}
+
+
+
+.hero-content h1 {
+
+    font-size: 48px;
+
+    color: var(--verde-escuro);
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+
+.hero-content p {
+
+    font-size: 18px;
+
+    color: var(--texto-mutado);
+
+    margin-bottom: 30px;
+}
+
+
+
+/* =========================================================
+   BOTÕES HERO
+   ========================================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+}
+
+
+
+/* =========================================================
+   BOTÃO PRINCIPAL
+   ========================================================= */
+
+.btn-primary {
+
+    background-color: var(--verde-escuro);
+
+    color: #ffffff;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    display: inline-block;
+}
+
+
+
+.btn-primary:hover {
+
+    background-color: var(--verde-principal);
+}
+
+
+
+/* =========================================================
+   BOTÃO SECUNDÁRIO
+   ========================================================= */
+
+.btn-secondary {
+
+    border: 2px solid var(--verde-escuro);
+
+    color: var(--verde-escuro);
+
+    padding: 13px 30px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    display: inline-block;
+}
+
+
+
+.btn-secondary:hover {
+
+    background-color: var(--verde-escuro);
+
+    color: #ffffff;
+}
+
+
+
+/* =========================================================
+   LISTA HERO
+   ========================================================= */
+
+.hero-features-list {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    color: var(--verde-escuro);
+
+    font-weight: 500;
+
+    font-size: 14px;
+}
+
+
+
+/* =========================================================
+   IMAGEM HERO
+   ========================================================= */
+
+.hero-images img {
+
+    width: 470px;
+
+    max-width: 100%;
+
+    height: auto;
+
+    border-radius: 40px;
+}
+
+
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.features {
+
+    padding: 80px 8%;
+
+    text-align: center;
+}
+
+
+
+.features h2 {
+
+    font-size: 32px;
+
+    color: var(--verde-escuro);
+
+    margin-bottom: 10px;
+}
+
+
+
+.features > p {
+
+    color: var(--texto-mutado);
+
+    margin-bottom: 50px;
+}
+
+
+
+/* =========================================================
+   GRID DOS CARDS
+   ========================================================= */
+
+.features-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 25px;
+}
+
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.feature-card {
+
+    background-color: var(--cinza-fundo);
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    border-left: 5px solid transparent;
+
+    transition: 0.3s;
+}
+
+
+
+.feature-card:hover {
+
+    border-left-color: var(--verde-principal);
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+
+
+.feature-card h3 {
+
+    color: var(--verde-escuro);
+
+    margin-bottom: 15px;
+
+    font-size: 20px;
+}
+
+
+
+.feature-card p {
+
+    color: var(--texto-mutado);
+
+    font-size: 15px;
+}
+
+
+
+/* =========================================================
+   DOWNLOAD SECTION
+   ========================================================= */
+
+.download-section {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+    /* Responsividade */
+
+    gap: 80px;
+    /* Espaço entre imagem e texto */
+
+    padding: 80px 8%;
+
+    background-color: var(--cinza-fundo);
+}
+
+
+
+/* =========================================================
+   IMAGEM DOWNLOAD
+   ========================================================= */
+
+.download-image img {
+
+    width: 600px;
+
+    max-width: 100%;
+
+    display: block;
+
+    border-radius: 20px;
+
+    
+}
+
+
+
+/* =========================================================
+   TEXTO DOWNLOAD
+   ========================================================= */
+
+.download-content {
+
+    max-width: 500px;
+
+    display: flex;
+
+    flex-direction: column;
+    /* Tudo em coluna */
+
+    justify-content: center;
+}
+
+
+
+/* =========================================================
+   TÍTULO DOWNLOAD
+   ========================================================= */
+
+.download-content h2 {
+
+    font-size: 36px;
+
+    color: var(--verde-escuro);
+
+    margin-bottom: 20px;
+}
+
+
+
+/* =========================================================
+   TEXTO DOWNLOAD
+   ========================================================= */
+
+.download-content p {
+
+    color: var(--texto-mutado);
+
+    margin-bottom: 20px;
+}
+
+
+
+/* =========================================================
+   BOTÕES DAS LOJAS
+   ========================================================= */
+
+.store-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin: 25px 0;
+}
+
+
+
+/* =========================================================
+   LISTA DE BENEFÍCIOS
+   ========================================================= */
+
+.benefits-list {
+
+    margin-top: 20px;
+}
+
+
+
+.benefits-list li {
+
+    margin-bottom: 15px;
+
+    font-weight: 500;
+
+    color: var(--texto-escuro);
+
+    padding-left: 25px;
+
+    position: relative;
+}
+
+
+
+/* =========================================================
+   ÍCONE VERDE
+   ========================================================= */
+
+.benefits-list li::before {
+
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+
+    color: var(--verde-principal);
+
+    font-weight: bold;
+}
+
+
+
+/* =========================================================
+   DEPOIMENTOS
+   ========================================================= */
+
+.testimonials {
+
+    padding: 80px 8%;
+
+    text-align: center;
+}
+
+
+
+.testimonials h2 {
+
+    font-size: 32px;
+
+    color: var(--verde-escuro);
+
+    margin-bottom: 50px;
+}
+
+
+
+/* =========================================================
+   GRID DOS DEPOIMENTOS
+   ========================================================= */
+
+.testimonials-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+}
+
+
+
+/* =========================================================
+   CARD DEPOIMENTO
+   ========================================================= */
+
+.testimonial-card {
+
+    background-color: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: left;
+}
+
+
+
+.testimonial-card p {
+
+    font-style: italic;
+
+    color: var(--texto-escuro);
+
+    margin-bottom: 20px;
+}
+
+
+
+/* =========================================================
+   CITAÇÃO
+   ========================================================= */
+
+.testimonial-card cite {
+
+    display: flex;
+
+    flex-direction: column;
+
+    font-style: normal;
+}
+
+
+
+.testimonial-card cite strong {
+
+    color: var(--verde-escuro);
+}
+
+
+
+.testimonial-card cite span {
+
+    color: var(--texto-mutado);
+
+    font-size: 14px;
+}
+
+
+
+/* =========================================================
+   CTA FINAL
+   ========================================================= */
+
+.final-cta {
+
+    padding: 60px 8%;
+}
+
+
+
+.cta-box {
+
+    background-color: var(--verde-escuro);
+
+    color: #ffffff;
+
+    padding: 50px;
+
+    border-radius: 16px;
+
+    text-align: center;
+}
+
+
+
+.cta-box h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+
+
+.cta-box p {
+
+    margin-bottom: 30px;
+
+    opacity: 0.9;
+}
+
+
+
+/* =========================================================
+   BOTÃO BRANCO
+   ========================================================= */
+
+.btn-download-white {
+
+    background-color: #ffffff;
+
+    color: var(--verde-escuro);
+
+    padding: 15px 35px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    display: inline-block;
+}
+
+
+
+.btn-download-white:hover {
+
+    background-color: var(--verde-claro);
+}
+
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+
+    background-color: #ffffff;
+
+    padding: 60px 8% 20px 8%;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+
+
+/* =========================================================
+   CONTAINER FOOTER
+   ========================================================= */
+
+.footer-container {
+
+    display: grid;
+
+    grid-template-columns: 2fr repeat(3, 1fr);
+
+    gap: 40px;
+
+    margin-bottom: 40px;
+}
+
+
+
+/* =========================================================
+   TÍTULOS FOOTER
+   ========================================================= */
+
+.footer-col h3,
+.footer-col h4 {
+
+    color: var(--verde-escuro);
+
+    margin-bottom: 20px;
+}
+
+
+
+/* =========================================================
+   TEXTOS FOOTER
+   ========================================================= */
+
+.footer-col p,
+.footer-col ul li a {
+
+    color: var(--texto-mutado);
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+
+    display: block;
+}
+
+
+
+.footer-col ul li a:hover {
+
+    color: var(--verde-principal);
+}
+
+
+
+/* =========================================================
+   FOOTER FINAL
+   ========================================================= */
+
+.footer-bottom {
+
+    text-align: center;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #e2e8f0;
+
+    color: var(--texto-mutado);
+
+    font-size: 14px;
+}

@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #03140c,
+        #0d3b24,
+        #14532d
+    );
+}
+
+/* CARD PRINCIPAL */
+
+.container{
+    width:380px;
+    border-radius:25px;
+
+    overflow:hidden;
+
+    background:#dcdcdc15;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* TOPO */
+
+.topo{
+    height:220px;
+
+    background:url("fundo.png");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+}
+
+.topo::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,0.25);
+}
+
+.topo h1{
+    position:relative;
+
+    color:white;
+
+    font-size:42px;
+    font-weight:bold;
+
+    z-index:2;
+}
+
+/* FORM */
+
+.formulario{
+    padding:30px;
+}
+
+/* TITULO */
+
+.formulario h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+/* INPUTS */
+
+input{
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:15px;
+
+    border:none;
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.15);
+
+    color:white;
+
+    outline:none;
+}
+
+/* PLACEHOLDER */
+
+input::placeholder{
+    color:#d8d8d8;
+}
+
+/* BOTÃO */
+
+.btn-entrar{
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#2d6a4f;
+
+    color:white;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+/* ESQUECEU */
+
+.btn-esqueceu{
+    width:100%;
+
+    padding:14px;
+
+    margin-top:15px;
+
+    border:none;
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.08);
+
+    color:#ddd;
+}
+
+/* CADASTRAR */
+.cadastro-item{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    
+    align-items:center;
+    justify-content:center;
+
+    gap:5px;
+
+    color:#7dff9b;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    font-size:12px;
+
+    text-align:center;
+}
+
+.cadastro-item i{
+    font-size:20px;
+}
+
+.cadastro.active{
+    color:#7dff9b;
+    
+}
+/* MENU */
+
+.menu{
+    margin-top:30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:10px 5px;
+
+    border-radius:15px;
+}
+
+.menu-item{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    gap:5px;
+
+    color:#7dff9b;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    font-size:12px;
+
+    text-align:center;
+}
+
+.menu-item i{
+    font-size:20px;
+}
+
+.menu-item.active{
+    color:#7dff9b;
+}
+
+.menu-item:not(.active){
+    color:#cfcfcf;
+}

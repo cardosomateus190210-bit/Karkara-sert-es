@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+
+<!--
+<!DOCTYPE html>
+
+DOCTYPE
+→ Diz o tipo do documento
+
+html
+→ Informa que usa HTML5
+
+Serve para:
+→ Fazer o navegador interpretar corretamente o site
+-->
+
+
+
+<html lang="pt-BR">
+
+<!--
+<html>
+→ Início do HTML
+
+lang="pt-BR"
+→ Define o idioma do site
+
+pt-BR
+→ Português do Brasil
+
+Serve para:
+→ SEO
+→ Tradutores
+→ Acessibilidade
+-->
+
+
+
+<head>
+
+<!--
+<head>
+→ Área de configurações invisíveis
+
+Aqui ficam:
+→ CSS
+→ título
+→ fontes
+→ meta tags
+-->
+
+
+
+    <meta charset="UTF-8">
+
+    <!--
+    meta
+    → Configuração da página
+
+    charset
+    → Tipo de caracteres
+
+    UTF-8
+    → Permite acentos e símbolos
+
+    Sem isso:
+    → Caracteres podem quebrar
+    -->
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+    viewport
+    → Área visível da tela
+
+    width=device-width
+    → Usa largura do dispositivo
+
+    initial-scale=1.0
+    → Zoom inicial normal
+    Serve para:
+    → Responsividade
+    → Celulares
+    -->
+
+
+
+    <title>Karkará - Gestão Inteligente para o Campo</title>
+
+    <!--
+    title
+    → Nome da aba do navegador
+    -->
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--
+    link
+    → Conecta arquivos externos
+
+    rel="stylesheet"
+    → Diz que é CSS
+
+    href
+    → Caminho do arquivo
+
+    Serve para:
+    → Aplicar o CSS no HTML
+    -->
+
+</head>
+
+
+
+<body>
+
+<!--
+<body>
+→ Parte visível do site
+
+Tudo mostrado na tela fica aqui
+-->
+
+
+
+    <header>
+
+    <!--
+    header
+    → Cabeçalho do site
+
+    Geralmente contém:
+    → Logo
+    → Menu
+    → Botões
+    -->
+
+
+
+        <div class="logo">
+
+        <!--
+        div
+        → Caixa organizadora
+
+        class
+        → Nome usado pelo CSS
+        -->
+
+
+
+            <a href="#">KARKARÁ</a>
+
+            <!--
+            a
+            → Link
+
+            href
+            → Destino do link
+
+            #
+            → Link vazio temporário
+            -->
+
+        </div>
+
+
+
+        <nav>
+
+        <!--
+        nav
+        → Área de navegação/menu
+        -->
+
+
+
+            <ul>
+
+            <!--
+            ul
+            → Lista não ordenada
+            -->
+
+
+
+                <li><a href="#inicio"><u>Início</u></a></li>
+
+                <!--
+                li
+                → Item da lista
+
+                href="#inicio"
+                → Leva para elemento com id="inicio"
+                -->
+
+
+
+                <li><a href="#recursos">Recursos</a></li>
+
+                <li><a href="#como-funciona">Como Funciona</a></li>
+
+                <li><a href="#beneficios">Benefícios</a></li>
+
+                <li><a href="#depoimentos">Depoimentos</a></li>
+
+                <li><a href="#contato">Contato</a></li>
+
+            </ul>
+
+        </nav>
+
+
+
+        <div class="header-cta">
+
+        <!--
+        cta
+        → Call To Action
+
+        Significa:
+        → Chamada para ação
+        -->
+
+
+
+            <a href="http://127.0.0.1:5500/cadrastro/login.htm" class="btn-login">login</a>
+
+            <!--
+            class="btn-login"
+            → Classe usada no CSS
+
+            Serve para:
+            → Estilizar o botão
+            -->
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+    <!--
+    main
+    → Conteúdo principal do site
+    -->
+
+
+
+        <section id="inicio" class="hero">
+
+        <!--
+        section
+        → Divide o site em partes
+
+        id
+        → Identificador único
+
+        class
+        → Nome para CSS
+        -->
+
+
+
+            <div class="hero-content">
+
+            <!--
+            Área do texto principal
+            -->
+
+
+
+                <h1>Gestão inteligente para o campo</h1>
+
+                <!--
+                h1
+                → Título principal
+
+                Importante para:
+                → SEO
+                → Hierarquia do site
+                -->
+
+
+
+                <p>
+
+                <!--
+                p
+                → Parágrafo
+                -->
+
+                O Karkará é o aplicativo que facilita o dia a dia do produtor rural com informações precisas, alertas inteligentes e ferramentas completas para aumentar sua produtividade.
+
+                </p>
+                
+                
+
+                <div class="hero-buttons">
+
+                <!--
+                Área dos botões
+                -->
+
+
+
+                    <a href="#" class="btn-primary">
+
+                    <!--
+                    Botão principal
+                    -->
+
+                    Baixar o aplicativo
+
+                    </a>
+
+
+
+                    <a href="#" class="btn-secondary">
+
+                    <!--
+                    Botão secundário
+                    -->
+
+                    Saiba mais
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="hero-features-list">
+
+                <!--
+                Lista de vantagens
+                -->
+
+
+
+                    <span>✓ 100% Gratuito</span>
+
+                    <!--
+                    span
+                    → Pequena área de texto inline
+                    -->
+
+                    <span>✓ Fácil de usar</span>
+
+                    <span>✓ Dados confiáveis</span>
+
+                    <span>✓ Para todo o Brasil</span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="hero-images">
+
+            <!--
+            Área das imagens
+            -->
+
+
+
+                <img 
+                    <img src="imagens/celular1.png" alt="Mockupdosmartphone"> >
+
+                <!--
+                img
+                → Imagem
+
+                src
+                → Caminho da imagem
+
+                alt
+                → Texto alternativo
+
+                Serve para:
+                → Acessibilidade
+                → SEO
+                → Caso imagem não carregue
+                -->
+
+            </div>
+
+        </section>
+
+
+
+        <section id="recursos" class="features">
+
+        <!--
+        Seção de recursos
+        -->
+
+
+
+            <h2>Tudo que você precisa em um só lugar</h2>
+
+            <!--
+            h2
+            → Título secundário
+            -->
+
+
+
+            <p>
+                Ferramentas completas para facilitar sua rotina e melhorar seus resultados
+            </p>
+
+
+
+            <div class="features-grid">
+
+            <!--
+            Grid dos cards
+            -->
+
+
+
+                <div class="feature-card">
+
+                <!--
+                Card individual
+                -->
+
+
+
+                    <h3>Plantio Inteligente</h3>
+
+                    <!--
+                    h3
+                    → Subtítulo
+                    -->
+
+
+
+                    <p>
+                        Planeje seu plantio com base em dados e históricos da sua região.
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <h3>Irrigação Eficiente</h3>
+
+                    <p>
+                        Monitore a umidade do solo e receba alertas para economizar água.
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <h3>Controle de Pragas</h3>
+
+                    <p>
+                        Identifique pragas e receba dicas de manejo para proteger sua lavoura.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="como-funciona" class="download-section">
+
+        <!--
+        Área de download
+        -->
+
+
+
+            <div class="download-image">
+
+                <img 
+                    src="imagens/2celular.png" 
+                    alt="Mockup do smartphone com app Karkará aberto"
+                >
+
+            </div>
+
+
+
+            <div class="download-content">
+
+                <h2>Leve o Karkará sempre com você</h2>
+
+                <p>
+                    Acesse todas as funcionalidades na palma da sua mão.
+                </p>
+
+
+
+                <div class="store-buttons">
+
+                    <a href="#" class="btn-primary">
+                        Google Play
+                    </a>
+
+
+
+                    <a href="#" class="btn-primary">
+                        App Store
+                    </a>
+
+                </div>
+
+
+
+                <ul class="benefits-list">
+
+                <!--
+                Lista de benefícios
+                -->
+
+
+
+                    <li>Interface simples e intuitiva</li>
+
+                    <li>Funciona offline em várias funções</li>
+
+                    <li>Atualizações constantes</li>
+
+                    <li>Seguro e confiável</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="beneficios" class="testimonials">
+
+        <!--
+        Área de depoimentos
+        -->
+
+
+
+            <h2>O que nossos usuários dizem</h2>
+
+
+
+            <div class="testimonials-grid">
+
+                <blockquote class="testimonial-card">
+
+                <!--
+                blockquote
+                → Bloco de citação/depoimento
+                -->
+
+
+
+                    <p>
+                        "O Karkará mudou a forma como manejo minha plantação."
+                    </p>
+
+
+
+                    <cite>
+
+                    <!--
+                    cite
+                    → Autor da citação
+                    -->
+
+
+
+                        <strong>João Silva</strong>
+
+                        <!--
+                        strong
+                        → Texto importante/negrito
+                        -->
+
+
+
+                        <span>Produtor de Milho – Ceará</span>
+
+                    </cite>
+
+                </blockquote>
+
+                 <blockquote class="testimonial-card">
+
+                <!--
+                blockquote
+                → Bloco de citação/depoimento
+                -->
+
+
+
+                    <p>
+                        "O Karkará mudou minha visão sobre a tecnologia na agricultura."
+                    </p>
+
+
+
+                    <cite>
+
+                    <!--
+                    cite
+                    → Autor da citação
+                    -->
+
+
+
+                        <strong>William Gleyson</strong>
+
+                        <!--
+                        strong
+                        → Texto importante/negrito
+                        -->
+
+
+
+                        <span>Produtor de Feijão – Ceará</span>
+
+                    </cite>
+
+                </blockquote>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="final-cta">
+
+        <!--
+        Chamada final para ação
+        -->
+
+
+
+            <div class="cta-box">
+
+                <h2>Pronto para transformar sua produção?</h2>
+
+
+
+                <p>
+                    Baixe agora o Karkará e tenha o controle total da sua lavoura.
+                </p>
+
+
+
+                <a href="#" class="btn-download-white">
+
+                    Baixar o aplicativo
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer id="contato">
+
+    <!--
+    footer
+    → Rodapé do site
+    -->
+
+
+
+        <div class="footer-container">
+
+            <div class="footer-col brand-col">
+
+                <h3>KARKARÁ</h3>
+
+
+
+                <p>
+                    Gestão inteligente para o campo.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-col">
+
+                <h4>NAVEGAÇÃO</h4>
+
+                <ul>
+
+                    <li><a href="#inicio">Início</a></li>
+
+                    <li><a href="#recursos">Recursos</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="footer-col">
+
+                <h4>SUPORTE</h4>
+
+                <ul>
+
+                    <li><a href="#">Central de ajuda</a></li>
+
+                    <li><a href="#">Perguntas frequentes</a></li>
+
+                </ul>
+
+            </div>
+
+
+
+            <div class="footer-col">
+
+                <h4>CONTATO</h4>
+                <p><a href="https://www.instagram.com/karkara_sertoes/">Instagram</a></p>
+
+                <p>(88) 928218-0920</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Karkará. Todos os direitos reservados.
+            </p>
+
+            <!--
+            &copy;
+            → Símbolo de copyright ©
+            -->
+
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+<!--
+Fim da parte visível
+-->
+
+
+
+</html>
+
+<!--
+Fim do HTML
+-->
